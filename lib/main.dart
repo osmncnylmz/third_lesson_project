@@ -325,10 +325,26 @@ class _PlaceFormPageState extends State<PlaceFormPage> {
                 maxLines: 2,
               ),
               const SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: _savePlace,
-                child: const Text("Kaydet", style: TextStyle(fontSize: 16)),
-              ),
+ElevatedButton(
+  onPressed: _savePlace,
+  style: ElevatedButton.styleFrom(
+    backgroundColor: Colors.blueGrey[900],
+    padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(12),
+    ),
+  ),
+  child: const Text(
+    "Kaydet",
+    style: TextStyle(
+      fontSize: 18,
+      color: Colors.white,
+      fontWeight: FontWeight.bold,
+    ),
+  ),
+),
+
+              
             ],
           ),
         ),
